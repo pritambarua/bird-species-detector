@@ -1,0 +1,180 @@
+img{width:400px; height:410px;}
+
+#myProgress {
+    width: 400px;
+    background-color: #ddd;
+    margin-left: 20%;
+  }
+  
+  #myBar {
+    width: 0%;
+    height: 30px;
+    background-color: #3498db;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+ .leftContainer{
+  background-color: rgb(241,241,241,0.6);
+				width: 48%;
+        float: left;
+        text-align: center;
+        
+ }
+ .rightContainer{
+  background-color: rgb(241,241,241,0.6);
+  width: 48%;
+  float: right;
+  text-align: center;
+ }
+ body{
+   margin-top: 5%;
+   margin-left:5%;
+   margin-right: 5%;
+   margin-bottom: 1%;
+   background-image: url(../img/wallpaper.jpg);
+ }
+ #upload{
+   cursor:pointer;
+   color: black;
+   font-size: larger;
+   border: 2px solid blue;
+   padding:10px;
+  
+ }
+ #upload:hover{
+   background-color: blue;
+   color:white;
+   border-radius: 50px; 
+ }
+ .button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+  border-radius: 10px;
+}
+table{
+  margin-left:17%;
+}
+table,td{
+  border: 1px solid blue;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.fa {
+  font: normal normal normal 30px/1 FontAwesome;
+  cursor: pointer;
+  user-select: none;
+  color:#008CBA;
+  }
+
+.fa:hover {
+  color: darkblue;
+}
+.rating {
+  float:left;
+  
+}
+.rating span {float:right;position:relative; }
+.rating span input {
+  position:absolute;
+  top:0px;
+  left:0px;
+  opacity:0;
+}
+.rating span label {
+  display:inline-block;
+  width:30px;
+  height:30px;
+  text-align:center;
+  color:#FFF;
+  background:#ccc;
+  font-size:30px;
+  margin-right:2px;
+  line-height:30px;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+}
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+  background:#008CBA;
+  color:#FFF;
+}
